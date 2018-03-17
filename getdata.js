@@ -53,6 +53,7 @@ var clickHandler = function(id, clueNum, div) {
 	var url = "http://jservice.io/api/category?id=" + id;
 	getData(url).then(result => {
 		document.getElementById(div).innerHTML = result.clues[clueNum].question;
+		console.log(result.clues[clueNum].answer);
 		document.getElementById(div).style.lineHeight = "normal";
 	})
 }

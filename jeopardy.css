@@ -1,0 +1,92 @@
+@font-face {
+	font-family: Antipasto;
+	src: url(fonts/antipasto-webfont.woff);
+}
+
+@font-face {
+	font-family: OS;
+	src: url(fonts/OpenSans-Regular.woff);
+}
+
+@font-face {
+	font-family: OSBold;
+	src: url(fonts/OpenSans-Bold.woff);
+}
+
+h1, h2 {
+	font-family: Antipasto, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	letter-spacing: 10px;
+	font-size: 2.5em;
+}
+
+
+h2 {
+	letter-spacing: 4px;
+	font-size: 1.5em;
+}
+
+.content {
+	display: grid;
+	margin: 50px 20px 10px 20px;
+}
+
+#grid-category, #grid-answers {
+	display: grid;
+	grid-gap: 10px;
+	text-align: center;
+	line-height: 70px;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+#grid-category {
+	font-family: OSB, sans-serif;
+	font-weight: bolder;
+}
+
+.category {
+	background: #3b5998;
+	color: white;
+	margin-bottom: 20px;
+	line-height: 50px
+}
+
+#grid-answers {
+	grid-template-rows: repeat(5, minmax(70px, auto));
+	grid-auto-flow: column;
+	font-family: OS, sans-serif;
+	grid-auto-rows: minmax(70px, auto);
+}
+
+#grid-answers > div:hover {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ffa500;
+}
+
+.third, .fourth, .fifth {
+	color: white;
+}
+
+.first {
+	background: #b3cde0;
+}
+
+.second {
+	background: #6497b1;
+}
+
+.third {
+	background: #005b96;
+}
+
+.fourth {
+	background: #03396c;
+}
+
+.fifth {
+	background: #011f4b;	
+}
